@@ -355,4 +355,3 @@ Time (s)    Accelerometer    GPS         Engine          Output
 | Minimum GPS Accuracy           | 15 meters      | Quality threshold                 |
 | Minimum Recording Speed        | 20 km/h        | Filter out slow movement          |
 | Maximum Valid Speed            | 300 m/s        | Detect GPS jumps/errors           |
-
