@@ -183,14 +183,14 @@ Every 10ms (100 Hz):                    Every 1000ms (1 Hz):
 ## PPE Value Interpretation
 
 ```
-PPE Value Range          Quality Level        Color
-─────────────────────────────────────────────────────────
-0.00 - 0.30             Excellent          ████ (Green)
-0.30 - 0.70             Very Good          ████ (Light Green)
-0.70 - 1.30             Good               ████ (Yellow-Green)
-1.30 - 1.80             Fair               ████ (Yellow)
-1.80 - 2.40             Poor               ████ (Orange)
-2.40+                   Very Poor          ████ (Red)
+PPE Value Range          Quality Level        Color Indicator
+──────────────────────────────────────────────────────────────────
+0.00 - 0.30             Excellent          Green
+0.30 - 0.70             Very Good          Light Green
+0.70 - 1.30             Good               Yellow-Green
+1.30 - 1.80             Fair               Yellow
+1.80 - 2.40             Poor               Orange
+2.40+                   Very Poor          Red
 ```
 
 ## State Machine: Location Sensor Status
@@ -267,21 +267,21 @@ If buffer exceeds 10,000 pieces:
 
 ```
 Accelerometer Samples @ 100 Hz:
-    ├─ Drop if frequency > 100 Hz (prevent buffer overflow)
-    ├─ Apply calibration scaling
-    └─ Feed to Engine
+    - Drop if frequency > 100 Hz (prevent buffer overflow)
+    - Apply calibration scaling
+    - Feed to Engine
 
 Engine Internal Processing:
-    ├─ Accumulate samples in time windows
-    ├─ Compute spectral analysis
-    ├─ Generate PPE output
-    └─ Raise ComputationCompleted event
+    - Accumulate samples in time windows
+    - Compute spectral analysis
+    - Generate PPE output
+    - Raise ComputationCompleted event
 
 DataCollector Buffering:
-    ├─ Queue: 0-999 pieces (normal operation)
-    ├─ Flush at 1000 pieces
-    ├─ Drop at 10,000 pieces (overflow protection)
-    └─ Async serialization (non-blocking)
+    - Queue: 0-999 pieces (normal operation)
+    - Flush at 1000 pieces
+    - Drop at 10,000 pieces (overflow protection)
+    - Async serialization (non-blocking)
 ```
 
 ## Timeline Example
