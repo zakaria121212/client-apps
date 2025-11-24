@@ -35,7 +35,7 @@ Before data collection begins, the accelerometer must be calibrated:
 
 1. **Calibration Process**:
    - Device must be placed on a stable, flat surface
-   - Collects 300 samples after dropping the first 50 samples
+   - Collects 300 samples after dropping the first 100 samples
    - Computes the mean acceleration magnitude
    - Calculates standard deviation to mean ratio
    
@@ -51,9 +51,9 @@ Before data collection begins, the accelerometer must be calibrated:
 
 ### 3. Core Algorithm Engine (`SmartRoadSense.Core`)
 
-**Location**: External DLL referenced at `../../../Core Algorithm/bin/SmartRoadSense.Core.dll`
+**Location**: External DLL (referenced in project files as `../../../Core Algorithm/bin/SmartRoadSense.Core.dll`, though the exact location may vary)
 
-The core algorithm is implemented in a separate library (`SmartRoadSense.Core.dll`) and includes:
+The core algorithm is implemented in a separate library (`SmartRoadSense.Core.dll`) that is not included in this repository's source code. The library includes:
 
 #### Data Input (`DataEntry`)
 The engine receives preprocessed data containing:

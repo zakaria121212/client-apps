@@ -76,7 +76,7 @@ This document provides visual representations of the SmartRoadSense road roughne
                 │
                 ▼
     ┌─────────────────────────┐
-    │   Drop first 50 samples │  ◄── Device settling time
+    │  Drop first 100 samples │  ◄── Device settling time
     └───────────┬─────────────┘
                 │
                 ▼
