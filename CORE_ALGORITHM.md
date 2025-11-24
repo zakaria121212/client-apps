@@ -24,8 +24,8 @@ The `SensorPack` class is responsible for:
 - **Accelerometer Sampling Rate**: 100 Hz desired (10ms between samples)
 - **GPS Sampling Rate**: 1 Hz (1000ms between samples)
 - **Minimum GPS Accuracy**: 15 meters
-- **Minimum Speed for Recording**: 20 km/h (~5.5 m/s) in production mode
-- **Maximum Speed Threshold**: 300 m/s (~1080 km/h) - values above this are considered GPS errors
+- **Minimum Speed for Recording**: 20 km/h (5.5 m/s) in production mode
+- **Maximum Speed Threshold**: 300 m/s (1080 km/h) - values above this are considered GPS errors
 
 ### 2. Accelerometer Calibration (`Calibrator.cs`)
 

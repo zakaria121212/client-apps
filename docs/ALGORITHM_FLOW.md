@@ -342,16 +342,16 @@ Time (s)    Accelerometer    GPS         Engine          Output
 
 ## Key Timing Constants
 
-| Parameter                      | Value          | Purpose                           |
-|--------------------------------|----------------|-----------------------------------|
-| Accelerometer Rate             | 100 Hz         | High-frequency vibration capture  |
-| GPS Rate                       | 1 Hz           | Location and speed tracking       |
-| Calibration Window             | 300 samples    | Stable measurement period         |
-| GPS Unfixed Timeout            | 5 seconds      | Detect GPS signal loss            |
-| GPS Stationary Timeout         | 5 minutes      | Detect lack of movement           |
-| Maximum Recording Pause        | 1 hour         | Auto-restart session              |
-| Data Batch Size                | 1000 pieces    | Efficient serialization           |
-| Data Drop Threshold            | 10,000 pieces  | Memory overflow protection        |
-| Minimum GPS Accuracy           | 15 meters      | Quality threshold                 |
-| Minimum Recording Speed        | 20 km/h        | Filter out slow movement          |
-| Maximum Valid Speed            | 300 m/s        | Detect GPS jumps/errors           |
+| Parameter                      | Value                | Purpose                           |
+|--------------------------------|----------------------|-----------------------------------|
+| Accelerometer Rate             | 100 Hz               | High-frequency vibration capture  |
+| GPS Rate                       | 1 Hz                 | Location and speed tracking       |
+| Calibration Window             | 300 samples          | Stable measurement period         |
+| GPS Unfixed Timeout            | 5 seconds            | Detect GPS signal loss            |
+| GPS Stationary Timeout         | 5 minutes            | Detect lack of movement           |
+| Maximum Recording Pause        | 1 hour               | Auto-restart session              |
+| Data Batch Size                | 1000 pieces          | Efficient serialization           |
+| Data Drop Threshold            | 10,000 pieces        | Memory overflow protection        |
+| Minimum GPS Accuracy           | 15 meters            | Quality threshold                 |
+| Minimum Recording Speed        | 20 km/h (5.5 m/s)    | Filter out slow movement          |
+| Maximum Valid Speed            | 300 m/s (1080 km/h)  | Detect GPS jumps/errors           |
