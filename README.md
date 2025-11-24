@@ -14,7 +14,7 @@ The SmartRoadSense system uses smartphone sensors (accelerometers and GPS) to de
 * **[Algorithm Flow Diagrams](docs/ALGORITHM_FLOW.md)** - Visual representations of data processing pipelines and system architecture
 
 Key highlights:
-- **PPE Metric**: Power Spectral Density Estimate used to quantify road roughness (0.2 = smooth, 2.0+ = poor)
+- **PPE Metric**: Power Spectral Density Estimate used to quantify road roughness (0.2 = excellent, 2.4+ = very poor)
 - **Sensor Fusion**: Combines 100Hz accelerometer data with 1Hz GPS data
 - **Calibration**: Device-independent measurements through automatic calibration
 - **Real-time Processing**: On-device computation with minimal latency
